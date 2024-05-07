@@ -1,0 +1,63 @@
+.body {
+    background-color: white;
+    color: black;
+}
+
+.logo {
+    height: 8rem;
+    width: 25rem;
+}
+
+.indice {
+    font-size: 1.5rem;
+}
+
+.imagenes {
+    display: inline-flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.imagenes .card {
+    background-color: grey;
+    color: white;
+    width: fit-content;
+    height: 10rem;
+    padding: 0.3rem;
+}
+
+.contacto {
+    border-bottom: 0.3rem black solid;
+    border-top: 0.3rem black solid;
+    /* background-image: ; */
+    background-color: rgb(8, 87, 8);
+    padding: 1%;
+}
+
+.contacto h3 {
+    color: white;
+}
+
+.contacto button {
+    color: black;
+    background-color: white;
+    border: black 0.2rem solid;
+    border-radius: 60%;
+    width: fit-content;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.container-fluid {
+    background-color: black;
+    margin: 0;
+    width: 100%;
+}
+
+.container-fluid p {
+    color: white;
+}
+
+.container-fluid p {
+    color: white;
+}
