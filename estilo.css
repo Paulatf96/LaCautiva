@@ -1,21 +1,32 @@
 body {
     font-family: "Poppins", sans-serif;
+    max-width: 100%;
 }
 .body {
     background-color: white;
     color: black;
+    max-width: 100%;
 }
 
+.body-container {
+    max-width: 100%;
+    overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
+    margin: 0;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+}
 .welcome-container {
     display: flex;
-    background-color: #22222B; /* Color de fondo gris */
+    background-color: #22222B;
     border-radius: 16px;
-    overflow: hidden; /* Para asegurarse de que el contenido no se salga de las esquinas redondeadas */
+    overflow: hidden;
     width: 1175px;
     height: 520px;
     padding: 24px 14px;
     margin: 24px auto;
-
 }
 
 .welcome-text {
@@ -23,13 +34,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0 20px; /* Ajusta el padding según sea necesario */
+    padding:0 20px; 
 }
 
 .text-content {
-    color: white; /* Color de texto blanco */
-    background-color: #22222B; /* Color de fondo para el texto */
-    padding: 20px; /* Espacio interior para el texto */
+    color: white; 
+    background-color: #22222B; 
+    padding: 20px; 
 }
 
 .carousel-container {
@@ -37,18 +48,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px; /* Ajusta el padding según sea necesario */
+    padding: 0 20px;
 }
 
 .carousel-item img {
-    /* Ajustes para las imágenes del carrusel */
-    width: 100%; /* Para hacer que todas las imágenes del carrusel sean del mismo ancho */
-    height: 100%; /* Para mantener la proporción */
-    object-fit: cover; /* Para rellenar el espacio del contenedor sin distorsionar la imagen */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .carousel-item {
-    /* Ajustar el tamaño del contenedor del carrusel */
     width: 100%;
     height: 100%;
 }
@@ -56,10 +65,8 @@ body {
 .bienvenida{
     display:flex;
     width: 1175px;
-    height: 520px;
     padding: 24px 14px;
     margin: 24px auto;
-
 }
 
 .bienvenida h4{
@@ -71,59 +78,58 @@ body {
     text-align: justify;
 }
 
-/* #welcome_one{
-    width:1175px;
-    height: 520px;
-    padding: 24px 14px 24px 14px;
-
-    margin: 24px 14px 24px 14px;
-
-}
-
-#welcome_text{
-
-    display:flex;
-    flex-direction: row;
-    background-color:  #22222B  ;
-}
-
-#welcome_text p, #welcome_text h6 {
-color: #F6F6F6;
-;
-}
-#carouselExampleIndicators div img{
-    background-size: cover;
-} */
-
 .logo {
-    height: 8rem;
-    width: 25rem;
+    height: 5rem;
+
 }
 
 .indice {
     font-size: 1.5rem;
 }
 
+.imagenes-container{
+    max-width: 100%; /* Ancho máximo igual al del body */
+    overflow-x: auto; /* Permitir el desplazamiento horizontal */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+}
 .imagenes {
-    display: inline-flex;
-    gap: 1rem;
-    margin: 1rem;
+
+   display: inline-flex;
+   gap: 1rem;
+   margin: 1rem;
+   width: auto; /* Permitir que se ajuste al contenido */
+   white-space: nowrap;
 }
 
 .imagenes .card {
-    background-color: grey;
+    background-color: #22222B;
     color: white;
     width: fit-content;
-    height: 10rem;
-    padding: 0.3rem;
+    height: 18rem;
+    padding: 0.5rem;
+}
+
+.imagenes .card img{
+    object-fit: cover;
+    width:100%;
+    height: 270px;
+    border-radius: 5px;
 }
 
 .contacto {
-    border-bottom: 0.3rem black solid;
-    border-top: 0.3rem black solid;
-    /* background-image: ; */
-    background-color: rgb(8, 87, 8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.2rem black solid;
+    border-top: 0.2rem black solid;
     padding: 1%;
+    background-image: url('./assets/contacto2.jpg');
+    background-size: cover; 
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .contacto h3 {
@@ -133,11 +139,11 @@ color: #F6F6F6;
 .contacto button {
     color: black;
     background-color: white;
-    border: black 0.2rem solid;
-    border-radius: 60%;
+    border-radius: 20px;
     width: fit-content;
     padding-right: 2rem;
     padding-left: 2rem;
+    border: none;
 }
 
 .container-fluid {
