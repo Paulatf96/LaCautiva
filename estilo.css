@@ -1,7 +1,99 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
 .body {
     background-color: white;
     color: black;
 }
+
+.welcome-container {
+    display: flex;
+    background-color: #22222B; /* Color de fondo gris */
+    border-radius: 16px;
+    overflow: hidden; /* Para asegurarse de que el contenido no se salga de las esquinas redondeadas */
+    width: 1175px;
+    height: 520px;
+    padding: 24px 14px;
+    margin: 24px auto;
+
+}
+
+.welcome-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 20px; /* Ajusta el padding según sea necesario */
+}
+
+.text-content {
+    color: white; /* Color de texto blanco */
+    background-color: #22222B; /* Color de fondo para el texto */
+    padding: 20px; /* Espacio interior para el texto */
+}
+
+.carousel-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Ajusta el padding según sea necesario */
+}
+
+.carousel-item img {
+    /* Ajustes para las imágenes del carrusel */
+    width: 100%; /* Para hacer que todas las imágenes del carrusel sean del mismo ancho */
+    height: 100%; /* Para mantener la proporción */
+    object-fit: cover; /* Para rellenar el espacio del contenedor sin distorsionar la imagen */
+}
+
+.carousel-item {
+    /* Ajustar el tamaño del contenedor del carrusel */
+    width: 100%;
+    height: 100%;
+}
+
+.bienvenida{
+    display:flex;
+    width: 1175px;
+    height: 520px;
+    padding: 24px 14px;
+    margin: 24px auto;
+
+}
+
+.bienvenida h4{
+    align-items: center;
+    justify-items: center;
+}
+.text_info{
+    padding:20px;
+    text-align: justify;
+}
+
+/* #welcome_one{
+    width:1175px;
+    height: 520px;
+    padding: 24px 14px 24px 14px;
+
+    margin: 24px 14px 24px 14px;
+
+}
+
+#welcome_text{
+
+    display:flex;
+    flex-direction: row;
+    background-color:  #22222B  ;
+}
+
+#welcome_text p, #welcome_text h6 {
+color: #F6F6F6;
+;
+}
+#carouselExampleIndicators div img{
+    background-size: cover;
+} */
 
 .logo {
     height: 8rem;
